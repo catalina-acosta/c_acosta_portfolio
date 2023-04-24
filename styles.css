@@ -151,7 +151,7 @@ li {
 .projects-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 150px 20px;
+  grid-gap: 150px 100px;
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
@@ -162,6 +162,12 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+}
+
+.grid-item p {
+  text-align: left;
+  margin-bottom: 10px;
 }
 
 .image-container {
@@ -195,6 +201,16 @@ img {
 .project-title {
   font-size: 2rem;
   padding: 2rem 0.5rem;
+}
+
+.tech-stack {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.tech-stack p {
+  color: var(--font-color2);
 }
 
 #about {
