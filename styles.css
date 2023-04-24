@@ -1,7 +1,36 @@
-@media only screen and (max-width: 720px) {
-  .body {
-    margin: 0;
+@media (max-width: 767px) {
+  /* Styles for small screens */
+  * {
+    margin: 0 auto;
   }
+  
+  h1, h2 {
+    font-size: 60%;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+/* Styles for devices with a minimum width of 768px and a maximum width of 991px (e.g. tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Styles for medium screens */
+}
+
+/* Styles for devices with a minimum width of 992px and a maximum width of 1199px (e.g. small laptops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Styles for large screens */
+}
+
+/* Styles for devices with a minimum width of 1200px (e.g. desktops) */
+@media (min-width: 1200px) {
+  /* Styles for extra large screens */
 }
 
 :root {
