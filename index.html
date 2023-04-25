@@ -9,10 +9,11 @@
       <meta charset="UTF-8">
     </head>
     <body>
-      <nav id="navbar">
-        <ul class="nav-list">
-          <li><a class="nav-link" href="#welcome-section">home</a></li>
-          <li><a class="nav-link" href="#projects">projects</a></li>
+      <div class="wrapper">
+        <nav id="navbar">
+          <ul class="nav-list">
+            <li><a class="nav-link" href="#welcome-section">home</a></li>
+            <li><a class="nav-link" href="#projects">projects</a></li>
           <li><a class="nav-link" href="#about">about</a></li>
           <li><a class="nav-link" href="#contact">contact</a></li>
         </ul>
@@ -29,14 +30,7 @@
         <h2 class="projects-section-header">here are some of my <span class="underline">projects</span></h2>
         <div class="projects-grid">
           <div class="grid-item">
-            <div class="image-container">
-              <a href="http://www.findmymidwife.de/midwives" target="_blank" class="project project-tile">
-                <img class="project-image" src="/documents/fmmw_img.png" alt="project">
-              </a>
-            </div>
-          </div>
-          <div class="grid-item">
-            <p class="project-title">Find my Midwife</p>
+            <p class="project-title underline">Find my Midwife</p>
             <p>It is a great work tool for midwifes developed with Ruby on Rails.</p>
             <p>You can log in directly from you phone: www.findmymidwife.de</p>
             <p>Please use the following credentials so that you can have the full user experience:</p>
@@ -44,10 +38,16 @@
               user: cata.acosta@gmail.com
               password: 123456</p>
             <p>- for the mom view:
-              user: alicia.stromback@gmail.com
-              password: 123456</p>
+                user: alicia.stromback@gmail.com
+                password: 123456</p>
             <p>Enjoy!</p>
-            <hr></hr>
+          </div>
+          <div class="grid-item">
+            <div class="image-container">
+              <a href="http://www.findmymidwife.de/midwives" target="_blank" class="project project-tile">
+                <img class="project-image" src="/documents/fmmw_img.png" alt="project">
+              </a>
+            </div>
             <div class="tech-stack">
               <p>Ruby on Rails |</p>
               <p>PostgreSQL |</p>
@@ -60,10 +60,17 @@
             </div>
           </div>
           <div class="grid-item">
-            <p class="project-title">my_cookbook</p>
+            <p class="project-title underline">my_cookbook</p>
             <p>A form created created with HTML and CSS that adds a new dish to a cookbook - in this case a google sheets doc, that works as a simple data base. The form information gets submitted and stored in the data base using an API.</p>
             <p> API spreadsheets generates the API for your google sheets document and is implemented in the HTML file using JavaScript and AJAX.</p>
             <p>Very easy to implement for projects that do not require a big data base and just need to store little information. Also great practice for front-end, JavaScript and AJAX :)</p>
+          </div>
+          <div class="grid-item">
+            <div class="image-container">
+              <a href="http://www.findmymidwife.de/midwives" target="_blank" class="project project-tile">
+                <img class="project-image" src="documents/my_cookbook.png" alt="project">
+              </a>
+            </div>
             <div class="tech-stack">
               <p>JavaScript</p>
               <p>AJAX</p>
@@ -72,11 +79,8 @@
             </div>
           </div>
           <div class="grid-item">
-            <div class="image-container">
-              <a href="http://www.findmymidwife.de/midwives" target="_blank" class="project project-tile">
-                <img class="project-image" src="documents/my_cookbook.png" alt="project">
-              </a>
-            </div>
+            <p class="project-title underline">portfolio</p>
+            <p>Welcome to my personal website! Here you can find some of the projects I've been working on and have a closer impression of who I am. The website was developed with Html and CSS and is hosted on Github Pages. It was a great learning experience to use grid and the biggest challenge was to achieve a good responsivness in different screen sizes.</p>
           </div>
           <div class="grid-item">
             <div class="image-container">
@@ -84,10 +88,6 @@
                 <img class="project-image" src="/documents/portfolio_pic.jpg" alt="project">
               </a>
             </div>
-          </div>
-          <div class="grid-item">
-            <p class="project-title">portfolio</p>
-            <p>Welcome to my personal website! Here you can find some of the projects I've been working on and have a closer impression of who I am. The website was developed with Html and CSS and is hosted on Github Pages. It was a great learning experience to use grid and the biggest challenge was to achieve a good responsivness in different screen sizes.</p>
             <div class="tech-stack">
               <p>CSS</p>
               <p>HTML</p>
@@ -106,13 +106,13 @@
         <div class="contact-section-header">
           <h2 class="contact-title"><span class="underline">contact</span> me</h2>
         </div>
+        <form action="mailto:catalina.acosta.rivera@gmail.com" method="post" enctype="text/plain">
+          name:<br><input type="text" name="name"> <br>
+          last name:<br><input type="text" name="lastname"><br>
+          message:<br><input type="text" name="message"><br>
+          <input type="submit" value="Send" class="download-btn">
+        </form>
         <div class="contact-links">
-          <form action="mailto:catalina.acosta.rivera@gmail.com" method="post" enctype="text/plain">
-            name:<br><input type="text" name="name"> <br>
-            last name:<br><input type="text" name="lastname"><br>
-            message:<br><input type="text" name="message"><br>
-            <input type="submit" value="Send" class="button">
-          </form>
           <a class="profile-link" href="https://www.linkedin.com/in/catalina-acosta-rivera/" target="_blank" class="btn contact-details">
             <i class="fab fa-linkedin-in"></i>
           </a>
@@ -125,5 +125,6 @@
       <footer>
         <p>built by catalina acosta rivera 2023.</p>
       </footer>
+    </div>
     </body>
-  </html>
+    </html>
