@@ -18,10 +18,25 @@
 
 } */
 
-/* Styles for devices with a minimum width of 768px and a maximum width of 991px (e.g. tablets)
-@media (min-width: 768px) and (max-width: 991px) {
+/* Styles for devices with a minimum width of 768px and a maximum width of 991px (e.g. tablets)*/
+@media screen and (min-width: 768px) and (max-width: 991px) {
   /* Styles for medium screens */
-/* } */
+  #navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left:0;
+    padding: 1.5rem 3rem;
+  }
+
+  .nav-link {
+    font-size: 24px;
+  }
+
+  
+}
 
 /* Styles for devices with a minimum width of 992px and a maximum width of 1199px (e.g. small laptops) */
 /* @media (min-width: 992px) and (max-width: 1199px) {
