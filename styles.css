@@ -18,17 +18,205 @@
     font-size: 24px;
   }
 
+  #welcome-section, #about, #contact {
+    padding: 0rem 3rem 0 3rem;
+  }
 
+  #projects {
+    padding: 4rem 3rem 0 3rem;
+  }
+  .header-title {
+    font-size: 56px;
+  }
+
+  .work-title, .projects-section-header, .about-header, .contact-title {
+    font-size: 36px;
+  }
+
+  .welcome-text, .project-description, .tech-stack p, .about-text {
+    font-size: 18px;
+  }
+
+  body .project-title {
+    font-size: 2rem;
+    margin: 2rem 0;
+  }
+
+  body .projects-section-header {
+    font-size: 36px;
+    padding-top: 7rem;
+    padding-bottom: 3rem;
+  }
+
+  body .grid-item-container {
+    padding: 0 2rem;
+    margin-bottom: 2rem;
+  }
+
+  body .image-container {
+    margin-top: 1rem  ;
+  }
+
+  body .about-image {
+    width: 200px;
+  }
+
+  body .download-btn {
+    font-size: 24px;
+  }
+
+  i {
+    font-size: 30px;
+  }
 }
 
-/* Styles for devices with a minimum width of 992px and a maximum width of 1199px (e.g. small laptops) */
-/* @media (min-width: 992px) and (max-width: 1199px) {
-  /* Styles for large screens
-} */
 
-/* Styles for devices with a minimum width of 1200px (e.g. desktops) */
-  /* Styles for extra large screens
-} */
+/* Styles for devices with a minimum width of 992px and a maximum width of 1199px (e.g. small laptops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Styles for large screens */
+  #navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left:0;
+    padding: 1.5rem 3rem;
+  }
+
+  .nav-link {
+    font-size: 24px;
+  }
+
+  #welcome-section, #about, #contact {
+    padding: 0rem 3rem 0 3rem;
+  }
+
+  #projects {
+    padding: 4rem 8rem 0 8rem;
+  }
+  .header-title {
+    font-size: 56px;
+  }
+
+  .work-title, .projects-section-header, .about-header, .contact-title {
+    font-size: 36px;
+  }
+
+  .welcome-text, .project-description, .tech-stack p, .about-text {
+    font-size: 18px;
+  }
+
+  body .project-title {
+    font-size: 2rem;
+    margin: 2rem 0;
+  }
+
+  body .projects-section-header {
+    font-size: 36px;
+    padding-top: 7rem;
+    padding-bottom: 3rem;
+  }
+
+  body .grid-item-container {
+    padding: 0 3rem;
+    margin-bottom: 2rem;
+  }
+
+  body .image-container {
+    margin-top: 1rem  ;
+  }
+
+  body .about-image {
+    width: 200px;
+  }
+
+  body .download-btn {
+    font-size: 24px;
+  }
+
+  i {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* Styles for extra large screens */
+  #navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left:0;
+    padding: 1.5rem 3rem;
+  }
+
+  .nav-link {
+    font-size: 24px;
+  }
+
+  #welcome-section {
+    padding: 0rem 20rem 0 4rem;
+  }
+
+  #about, #contact {
+    padding: 0rem 14rem 0 14rem;
+  }
+
+  #projects {
+    padding: 4rem 6rem 0 6rem;
+  }
+  .header-title {
+    font-size: 78px;
+  }
+
+  .work-title, .projects-section-header, .about-header, .contact-title {
+    font-size: 36px;
+  }
+
+  .welcome-text, .project-description, .tech-stack p, .about-text {
+    font-size: 18px;
+  }
+
+  body .project-title {
+    font-size: 2rem;
+    margin: 2rem 0;
+  }
+
+  body .projects-section-header {
+    font-size: 36px;
+    padding-top: 7rem;
+    padding-bottom: 3rem;
+  }
+  body .projects-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px 50px;
+    width: 100%;
+    max-width: 1280px;
+  }
+
+  body .grid-item-container {
+    padding: 0 2rem;
+  }
+
+  body .image-container {
+    margin-top: 1rem  ;
+  }
+
+  body .about-image {
+    width: 200px;
+  }
+
+  body .download-btn {
+    font-size: 24px;
+  }
+
+  i {
+    font-size: 30px;
+  }
+}
+
 
 :root {
   --background-color: #f1faee;
@@ -167,7 +355,7 @@ li {
   padding: 15px;
 }
 
-#welcome-section {
+.welcome-section {
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -180,7 +368,7 @@ li {
 
 }
 
-#projects {
+.projects {
   text-align: center;
   padding: 0 1.5rem 0 1.5rem;
   /* padding: 10rem 2rem; */
@@ -225,7 +413,7 @@ li {
 }
 
 .grid-item p {
-  text-align: left;
+  text-align: justify;
   margin-bottom: 0.25rem;
 }
 
@@ -261,7 +449,6 @@ img {
 }
 
 .project-title {
-  font-size: 1.25rem;
   color: var(--background-color);
   margin-top: 1.5rem;
   margin-bottom: 1rem;
@@ -282,7 +469,7 @@ img {
   color: var(--background-color);
 }
 
-#about {
+.about {
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -313,7 +500,7 @@ img {
 }
 
 
-#contact {
+.contact {
   height: 100vh;
   display: flex;
   flex-direction: column;
