@@ -1,22 +1,5 @@
-/* @media only screen and (max-width: 767px) {
-  /* Styles for small screens */
-  /* * {
-    margin: 0 auto;
-  }
 
-  h1, h2 {
-    font-size: 60%;
-  }
-
-  p {
-    font-size: 12px;
-  }
-
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
-
-} */
+/* Styles for small screens */
 
 /* Styles for devices with a minimum width of 768px and a maximum width of 991px (e.g. tablets)*/
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -35,7 +18,7 @@
     font-size: 24px;
   }
 
-  
+
 }
 
 /* Styles for devices with a minimum width of 992px and a maximum width of 1199px (e.g. small laptops) */
@@ -227,6 +210,13 @@ li {
   margin-bottom: 6rem;
 }
 
+.grid-item-container {
+  background-color: var(--font-color1);
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+
 .grid-item {
   display: flex;
   flex-direction: column;
@@ -239,6 +229,9 @@ li {
   margin-bottom: 0.25rem;
 }
 
+.project-description {
+  color: var(--background-color);
+}
 .image-container {
   width: 100%;
   height: 0;
@@ -269,6 +262,9 @@ img {
 
 .project-title {
   font-size: 1.25rem;
+  color: var(--background-color);
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
   /* padding: 1rem 0; */
 }
 
@@ -279,11 +275,11 @@ img {
   flex-wrap: wrap;
   margin-top: 0.5rem;
   border-bottom: 1px solid var(--font-highlight);
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .tech-stack p {
-  color: var(--font-color2);
+  color: var(--background-color);
 }
 
 #about {
